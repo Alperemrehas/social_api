@@ -1,4 +1,4 @@
-# social_api
+## Social_api
 
 1. To clone the repisotry you can open your favorite IDE and type :
 
@@ -24,3 +24,5 @@ Check that if the virtual enviornmemt is activate. Those who use vscode can see 
 5. After installing the package you can run you code by typing:
  
          uvicorn storeap.main:app --reload
+# Crude Operations
+ In order to help your process to understand the mechanism that is working behind this api you could use several third party applciations. In here I used Insomnia (link: https://insomnia.rest/download). Here you can create post, get requests and can simulate the process.
