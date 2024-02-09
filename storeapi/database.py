@@ -1,6 +1,7 @@
 import databases
 import sqlalchemy
-from config import config
+
+from storeapi.config import config
 
 metadata = sqlalchemy.MetaData()
 
@@ -19,7 +20,7 @@ comment_table = sqlalchemy.Table(
 )
 
 engine = sqlalchemy.create_engine(
-    config.DABASE_URL, connect_args = {"check_same_thread" : False}
+    config.DATABASE_URL, connect_args = {"check_same_thread" : False}
 )
 
 metadata.create_all(engine)
